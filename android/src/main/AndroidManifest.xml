@@ -1,0 +1,6 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="codes.simen.IMEI">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+</manifest>
