@@ -1,6 +1,6 @@
 {
   "name": "react-native-imei",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Get imei in react-native (Android only)",
   "main": "imei.js",
   "keywords": [
