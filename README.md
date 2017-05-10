@@ -28,8 +28,8 @@ Based on [rebeccahughes/react-native-device-info](https://github.com/rebeccahugh
 
 ```javascript
 // JavaScript
-var IMEI = require('react-native-imei');
-Imei.getImei();
+const IMEI = require('react-native-imei');
+IMEI.getImei();
 ```
 
 ```clojure
