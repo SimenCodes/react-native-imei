@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "description": "Get imei in react-native (Android only)",
   "main": "imei.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SimenCodes/react-native-imei.git"
+  },
   "keywords": [
     "react-component",
     "react-native",
