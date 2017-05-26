@@ -17,7 +17,7 @@ public class IMEI implements ReactPackage {
             ReactApplicationContext reactContext) {
         List<NativeModule> modules = new ArrayList<>();
 
-        modules.add(new RNDeviceModule(reactContext));
+        modules.add(new RNImeiModule(reactContext));
 
         return modules;
     }
