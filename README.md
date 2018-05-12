@@ -1,8 +1,8 @@
 ## react-native-imei
 
-A react native library for Android, will return IMEI when app is being run on an Android device and has READ_PHONE_STATE permission.
+A react native library for Android, will return IMEI (International Mobile Equipment Identity) when app is being run on an Android device and has READ_PHONE_STATE permission.
 
-Imei is guaranteed to be non-empty string, otherwise you will get an exception.
+IMEI is guaranteed to be non-empty string, otherwise you will get an exception.
 
 Exception is thrown if:
   * Permission is missing
@@ -37,3 +37,7 @@ IMEI.getImei();
 (def imei-module (js/require "react-native-imei"))
 (def imei (.getImei imei-module))
 ```
+
+## iOS
+
+This library does not support iOS devices. Apple does not allow apps to access device identiying information such as IMEI. For more information please look at [this StackOverflow question](https://stackoverflow.com/a/19927376).
