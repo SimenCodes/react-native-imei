@@ -28,7 +28,13 @@ public class RNImeiModule extends ReactContextBaseJavaModule {
         final Map<String, Object> constants = new HashMap<>();
 
         TelephonyManager tm = (TelephonyManager) this.reactContext.getSystemService(Context.TELEPHONY_SERVICE);
-        String imei = tm.getDeviceId().trim();
+        String imei="";
+        if (android.os.Build.VERSION.SDK_INT >= 26) {
+            imei = tm.getImei().trim();
+        } else {
+            imei= tm.getDeviceId();
+        }
+
         if (imei.isEmpty()) {
             throw new RuntimeException("Failed to read IMEI (imei is empty!)");
         }
