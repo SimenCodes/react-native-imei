@@ -8,6 +8,9 @@ if (ReactNative.Platform.OS === "android") {
     module.exports = {
         getImei: function () {
             return ReactNative.NativeModules.IMEI.imei;
+        },
+        getDualImei: function () {
+            return ReactNative.NativeModules.IMEI.dualImei;
         }
     };
 } else {
