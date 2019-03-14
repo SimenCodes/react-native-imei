@@ -22,21 +22,19 @@ yarn add react-native-imei
 react-native link react-native-imei
 ```
 
-Based on [rebeccahughes/react-native-device-info](https://github.com/rebeccahughes/react-native-device-info)
-
 ## Examples
 
 ```javascript
 // JavaScript
 const IMEI = require('react-native-imei');
-IMEI.getImei();
+IMEI.getImei().then(imeiList => {
+	console.log(imeiList)
+});
 ```
 
-```clojure
-; ClojureScript
-(def imei-module (js/require "react-native-imei"))
-(def imei (.getImei imei-module))
-```
+## Google Play
+
+Google Play has fairly strict rules regarding the use of hardware identifiers such as IMEI numbers. Make sure your use of this library is compliant with [current policies](https://play.google.com/about/developer-content-policy) if you plan to distribute your Android app using Google Play.
 
 ## iOS
 
