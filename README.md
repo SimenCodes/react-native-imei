@@ -11,13 +11,13 @@ Exception is thrown if:
 
 ## Warning!
 
-In almost all cases, you do not want to be using the IMEI. It only supports Android devices with a SIM slot, and the app must have [special permissions on Android 10+](https://developer.android.com/about/versions/10/privacy/changes#non-resettable-device-ids).
+In almost all cases, you do not want to be using the IMEI. It is only available on Android devices with a SIM slot, and [Android 10+ requires special permissions to read it](https://developer.android.com/about/versions/10/privacy/changes#non-resettable-device-ids).
 
 ### Google Play
 
-Google Play has fairly strict rules regarding the use of hardware identifiers such as IMEI numbers. Make sure your use of this library is compliant with [current policies](https://play.google.com/about/developer-content-policy) if you plan to distribute your Android app using Google Play.
+Google Play has strict rules regarding the use of hardware identifiers such as IMEI numbers. Make sure your use of this library is compliant with [current policies](https://play.google.com/about/developer-content-policy) if you plan to distribute your Android app using Google Play.
 
-_Hint: if you are not 100% sure your use case is allowed, the answer is usually no. You have been warned._
+_Hint: if you are not 100% sure your use case is allowed, the answer is usually no._
 
 ### iOS
 
